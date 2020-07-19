@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 import Flex from '../../src/components/Flex'
 
 const FlexContainer = styled(Flex)`

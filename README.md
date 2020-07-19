@@ -2,20 +2,24 @@
 
 Flexbox components for React Applications.
 
-![alt text](./static/images/sample.png)
+![alt text](./static/images/flex.png)
 
 ```jsx
-<Flex row justify="space-between" align="center">
-  <FlexItem align="start">...</FlexItem>
-  <FlexItem shrink grow >...</FlexItem>
-  <FlexItem grow={2} >
-    <Flex column align="center">
-      <FlexItem>...</FlexItem>
-      <FlexItem align="stretch">...</FlexItem>
-      <FlexItem grow />
+  <Flex row justify="space-between" align="center">
+    <Flex alignSelf="start" ... />
+    <Flex shrink grow ... />
+    <Flex
+      column
+      alignSelf="stretch"
+      grow={2}
+      justify="space-between"
+      align="center"
+    >
+      <Flex alignSelf="stretch" ... />
+      <Flex ... />
+      <Flex alignSelf="end" grow ... />
     </Flex>
-  </FlexItem>
-</Flex>
+  </Flex>
 ```
 
 #### Install
